@@ -9,7 +9,7 @@
 void personInfoCallback(const learning_topic::Person::ConstPtr& msg)
 {
     // 将接收到的消息打印出来
-    ROS_INFO("Subcibe Person Info: name: %s,  age: %d,  sex: %d", msg->name, msg->age, msg->sex);
+    ROS_INFO("Subcibe Person Info: name: %s,  age: %d,  sex: %d", msg->name.c_str(), msg->age, msg->sex);
 }
 
 int main(int argc, char **argv)

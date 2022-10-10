@@ -187,6 +187,8 @@ add_dependencies(person_subscriber ${PROJECT_NAME}_generate_messages_cpp)
 catkin_install_python(PROGRAMS
   scripts/velocity_publisher.py
   scripts/pose_subscriber.py
+  scripts/person_publisher.py
+  scripts/person_subscriber.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

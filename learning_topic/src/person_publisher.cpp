@@ -31,7 +31,7 @@ int main(int argc, char **argv)
         // 发布消息
         person_info_pub.publish(person_msg);
 
-        ROS_INFO("Publish Person Info: name: %s,  age: %d,  sex: %d", person_msg.name, person_msg.age, person_msg.sex);
+        ROS_INFO("Publish Person Info: name: %s,  age: %d,  sex: %d", person_msg.name.c_str(), person_msg.age, person_msg.sex);
 
         // 按照循环频率延时
         loop_rate.sleep();
